@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rvRow"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#DFD6D6">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Ttitle"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/title"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Tnote"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/Ttitle"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/text"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/imgBtn"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/imgbtn"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:tint="@color/black" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
